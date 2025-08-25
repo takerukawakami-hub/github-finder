@@ -1,0 +1,12 @@
+.repo-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.repo-card h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
