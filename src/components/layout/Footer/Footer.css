@@ -1,0 +1,9 @@
+.footer-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  color: #333;
+  /* この設定でコンテンツが少なくてもフッターが最下部に固定されます */
+  margin-top: auto;
+}

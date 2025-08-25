@@ -1,0 +1,42 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.my-name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 2rem 0;
+}
+
+.about-app-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}

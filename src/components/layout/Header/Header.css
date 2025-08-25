@@ -1,0 +1,41 @@
+.header-container {
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #444;
+  height:60px;
+}
+
+.header-content {
+  max-width: 300vh; /*vhの単位は、全画面に対する割合らしい。詳細忘れたらまた調べよう*/
+  float:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a, .navigation .theme-toggle-btn {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.theme-toggle-btn {
+  background: #555;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
