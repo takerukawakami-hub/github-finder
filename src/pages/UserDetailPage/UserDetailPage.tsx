@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+// 1. Link に加えて useNavigate をインポートします
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import RepoList from '../../components/repos/RepoList';
 import './UserDetailPage.css';
 
 const UserDetailPage: React.FC = () => {
-  // 1. URLから :login パラメータ(ユーザー名)を取得
   const { login } = useParams<{ login: string }>();
-
-  // 2. 必要な状態を定義
+  // 2. useNavigateフックを呼び出して、navigate関数を取得します
+  const navigate = useNavigate();
+  
   const [user, setUser] = useState<any>(null);
   const [repos, setRepos] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // 3. コンポーネントが表示された時にデータを取得
   useEffect(() => {
     const getUserData = async () => {
       setIsLoading(true);
-      // ユーザー情報とリポジトリ情報を同時に取得
       const [userRes, reposRes] = await Promise.all([
         fetch(`https://api.github.com/users/${login}`),
         fetch(`https://api.github.com/users/${login}/repos?per_page=5&sort=created:asc`)
@@ -32,18 +31,18 @@ const UserDetailPage: React.FC = () => {
     if (login) {
       getUserData();
     }
-  }, [login]); // loginの値が変わったら再実行
+  }, [login]);
 
   if (isLoading) {
     return <p>Loading...</p>;
   }
 
-  // 4. 取得したデータを表示
   return (
     <div className="user-detail-container">
-      <Link to="/" className="back-btn">
+      {/* 3. <Link>タグを<button>タグに変更し、onClickイベントを追加します */}
+      <button onClick={() => navigate(-1)} className="back-btn">
         Back to Search
-      </Link>
+      </button>
       <div className="profile-grid">
         <div className="profile-header">
           <img src={user.avatar_url} alt={user.name} className="profile-avatar" />
