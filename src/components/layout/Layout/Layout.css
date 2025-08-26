@@ -5,10 +5,9 @@
 }
 
 .main-content {
-  /* この設定でコンテンツエリアが可変に伸縮します */
-  flex: 0;
-  max-width: 100vh;
-  width: 100%;
-  /*margin: 0 auto;*/
-  padding: 0;
+  /* HeaderとFooterの間の全ての空間を埋めるように伸縮させる */
+  flex: 1; 
+
+  /* paddingで内側に余白を持たせる */
+  padding: 2rem;
 }

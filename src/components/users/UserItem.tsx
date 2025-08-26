@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './UserItem.css';
 
 // ユーザー情報の型を定義
-interface User  {
+export interface User  {
+  id : number;
   login: string;
   avatar_url: string;
 };

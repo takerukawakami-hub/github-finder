@@ -49,8 +49,8 @@
 .stat {
   padding: 0.5rem;
   margin: 0.2rem;
-  background-color:#737373;
+  background-color:#e8e8e8;
   border-radius: 5px;
   flex-grow: 1;
-  color:var(--color);
+  color:black;
 }

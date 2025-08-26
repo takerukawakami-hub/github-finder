@@ -4,18 +4,21 @@ import './AboutPage.css';
 const AboutPage = () => {
   return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title">Profile</h1>
       
       {/* <img src={myAvatar} alt="My Avatar" className="avatar" /> */}
-      
+      <img  className ='img-icon'src="../../public/profile-icon.jpg" alt="profile-img" />
+
       <h2 className="my-name">Takeru Kawakami</h2>
       
       <div className="about-content">
         <p>
-          Hello, I'm TAKERU. Nice to meet you :))
+          Thank you for visiting my website.I'm Takeru.
+          <br />I am currently studying HTML, CSS, JavaScript, TypeScript, and its library, React.
         </p>
         <p>
-          Now, I learning about data science :)
+          This application was created using AI as an internship training project. 
+          The user search functionality is implemented using the GitHub API.
         </p>
       </div>
 

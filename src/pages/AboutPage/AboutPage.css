@@ -3,7 +3,13 @@
   max-width: 800px;
   padding: 0px 30px;
   text-align: center;
-  color:var(--color)
+  color:var(--color);
+    font-family: 'Roboto';
+  
+}
+.img-icon{
+  width:40%;
+  border-radius:50%;
 }
 
 .about-title {
