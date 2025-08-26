@@ -1,5 +1,5 @@
 .header-container {
-  background-color: #333;
+  background-color: var(--header-background);
   color: white;
   border-bottom: 1px solid #444;
   height:60px;

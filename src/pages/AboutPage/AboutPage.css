@@ -1,8 +1,9 @@
 .about-container {
+  margin:0 auto;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 0px 30px;
   text-align: center;
+  color:var(--color)
 }
 
 .about-title {

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { useTheme } from '../../../contexts/ThemeContext';
 
 const Header: React.FC = () => {
-  // ダークモード切替のロジックは後ほど実装します
-  const handleThemeToggle = () => {
-    console.log('ダークモードが切り替えられました');
-  };
+  const { theme, toggleTheme } = useTheme();
+
 
   return (
     <header className="header-container">
@@ -17,8 +16,8 @@ const Header: React.FC = () => {
         <nav className="navigation">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <button onClick={handleThemeToggle} className="theme-toggle-btn">
-            Dark Mode
+          <button onClick={toggleTheme} className="theme-toggle-btn">
+            {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
           </button>
         </nav>
       </div>
