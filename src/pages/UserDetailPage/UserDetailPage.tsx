@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // 1. Link に加えて useNavigate をインポートします
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import RepoList from '../../components/repos/RepoList';
 import './UserDetailPage.css';
 
