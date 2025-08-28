@@ -1,5 +1,6 @@
 import './AboutPage.css';
 // import myAvatar from '../assets/my-avatar.png'; // 例: アバター画像をassetsフォルダに置く場合
+import profileImage from '../../assets/profile-icon (2).jpg'
 
 const AboutPage = () => {
   return (
@@ -7,7 +8,7 @@ const AboutPage = () => {
       <h1 className="about-title">Profile</h1>
       
       {/* <img src={myAvatar} alt="My Avatar" className="avatar" /> */}
-      <img  className ='img-icon' src="../assets/profile-icon (2).jpg" alt="profile-img" />
+      <img  className ='img-icon' src={profileImage} alt="profile-img" />
 
       <h2 className="my-name">Takeru Kawakami</h2>
       
