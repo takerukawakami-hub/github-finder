@@ -7,7 +7,7 @@ const AboutPage = () => {
       <h1 className="about-title">Profile</h1>
       
       {/* <img src={myAvatar} alt="My Avatar" className="avatar" /> */}
-      <img  className ='img-icon'src="../../public/profile-icon.jpg" alt="profile-img" />
+      <img  className ='img-icon' src="../assets/profile-icon (2).jpg" alt="profile-img" />
 
       <h2 className="my-name">Takeru Kawakami</h2>
       
